@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прокладка</title>
+    <title>Lumor Squad</title>
     <style>
         * {
             margin: 0;
@@ -27,6 +27,37 @@
             flex-direction: column;
             gap: 20px;
             align-items: center;
+        }
+
+        .logo-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            box-shadow: 
+                0 0 20px rgba(98, 43, 255, 0.4),
+                0 0 40px rgba(98, 43, 255, 0.3),
+                0 0 60px rgba(98, 43, 255, 0.2),
+                0 0 80px rgba(98, 43, 255, 0.1);
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes glow-pulse {
+            0%, 100% {
+                box-shadow: 
+                    0 0 20px rgba(98, 43, 255, 0.4),
+                    0 0 40px rgba(98, 43, 255, 0.3),
+                    0 0 60px rgba(98, 43, 255, 0.2),
+                    0 0 80px rgba(98, 43, 255, 0.1);
+            }
+            50% {
+                box-shadow: 
+                    0 0 30px rgba(98, 43, 255, 0.6),
+                    0 0 50px rgba(98, 43, 255, 0.4),
+                    0 0 70px rgba(98, 43, 255, 0.3),
+                    0 0 100px rgba(98, 43, 255, 0.2);
+            }
         }
 
         .loader {
@@ -381,51 +412,64 @@
         }
 
         @media (max-width: 768px) {
+            .logo-image {
+                width: 180px;
+                height: 180px;
+                margin-bottom: 25px;
+            }
+
             .loader {
-                --main-size: 3em;
-                width: 6.75em;
+                --main-size: 5em;
+                width: 11.25em;
                 margin-bottom: 30px;
             }
 
             .buttons-container {
-                gap: 15px;
+                gap: 18px;
                 padding: 0 20px;
             }
 
             .animated-button {
-                padding: 14px 28px;
-                font-size: 14px;
+                padding: 16px 32px;
+                font-size: 16px;
                 width: 100%;
-                max-width: 300px;
+                max-width: 320px;
             }
         }
 
         @media (max-width: 480px) {
+            .logo-image {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+
             .loader {
-                --main-size: 2.5em;
-                width: 5.6em;
+                --main-size: 4.5em;
+                width: 10.125em;
                 margin-bottom: 25px;
             }
 
             .buttons-container {
-                gap: 12px;
+                gap: 16px;
                 padding: 0 15px;
             }
 
             .animated-button {
-                padding: 12px 24px;
-                font-size: 13px;
-                max-width: 280px;
+                padding: 15px 30px;
+                font-size: 15px;
+                max-width: 300px;
             }
 
             .animated-button svg {
-                width: 20px;
+                width: 22px;
             }
         }
     </style>
 </head>
 <body>
     <div class="buttons-container">
+        <img src="https://i.postimg.cc/63LMBVKR/photo-2025-11-11-00-00-04.jpg" alt="Logo" class="logo-image">
         <div class="loader">
             <div class="text"><span>Lumor Squad</span></div>
             <div class="text"><span>Lumor Squad</span></div>
@@ -438,7 +482,6 @@
             <div class="text"><span>Lumor Squad</span></div>
             <div class="line"></div>
         </div>
-        <!-- Кнопка 1: укажи ссылку в href -->
         <a href="https://t.me/Lumorq_bot" class="animated-button" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
                 <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
@@ -449,7 +492,6 @@
                 <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
             </svg>
         </a>
-        <!-- Кнопка 2: укажи ссылку в href -->
         <a href="https://t.me/+jRIoQOYUNHo1MmNi" class="animated-button" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
                 <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
@@ -460,7 +502,6 @@
                 <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
             </svg>
         </a>
-        <!-- Кнопка 3: укажи ссылку в href -->
         <a href="https://t.me/+oGhV_yXVyxtiNDgy" class="animated-button" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
                 <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
